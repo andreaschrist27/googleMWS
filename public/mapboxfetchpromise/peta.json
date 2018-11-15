@@ -1,0 +1,22 @@
+{
+  "places": [
+    {
+        "lokasi": [-0.030835, 109.342353],
+        "sponsor": "Aming Cofee",
+        "gambar": "/images/aming.jpg",
+        "review": "Warung kopi aming, enak harga bersahabat"
+    },
+    {
+        "lokasi": [-0.036235, 109.344265],
+        "sponsor": "Abang Kepiting",
+        "gambar": "/images/abangkepiting.jpg",
+        "review": "Abang Kepiting, seafood enak"
+    },
+    {
+        "lokasi": [-0.028761, 109.340853],
+        "sponsor": "Aming Cofee",
+        "gambar": "/images/asiang.jpg",
+        "review": "Asiang, warung kopi para pejaba"
+    }
+ ]
+}
