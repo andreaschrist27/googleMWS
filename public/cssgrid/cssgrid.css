@@ -1,0 +1,32 @@
+
+   .container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 4px
+  }
+  .div1{
+      background: rgb(206, 206, 255);
+      grid-column-start: 1;
+      grid-column-end: 3;
+  }
+  .div2{ 
+      background: rgb(255, 113, 113);
+  }
+  .div3{
+      background: rgb(168, 252, 168);
+      grid-row-start: 2;
+      grid-row-end: 4;
+  }
+  .div4{
+      background: rgb(228, 127, 127);
+      grid-column-start: 2;
+      grid-column-end: 4;
+  }
+  .div5{
+      background: rgb(240, 130, 240);
+  }
+  .div6{
+      background: rgb(255, 255, 240);
+  }
