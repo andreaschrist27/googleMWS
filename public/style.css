@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 30px 100px 100px 100px 30px;
+    grid-gap: 10px;
+}
+.menu {
+    background: rgb(185, 88, 88);
+    grid-column-start: 1;
+    grid-column-end: 5; 
+}
+.sidebar {
+    background: rgb(190, 129, 129);
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-end: 1/2;
+}
+.konten {
+    background: rgb(241, 209, 209);
+    grid-column: 2/5;
+}
+.footer {
+    background: rgb(165, 118, 118);
+    grid-column: 1/5;
+    grid-row:5/6;
+}
