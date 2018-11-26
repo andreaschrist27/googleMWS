@@ -31,18 +31,16 @@ gmb.appendChild(img);
 rev.appendChild(par);
 
 const URL = "peta.json";
-fetch(URL).then(function(response){
-    if(response.status !== 200){
-        return;
+async function getPeta(url){
+    try {      
+        let response = await fetch(url);
+        let responseData = await response.json();
+        localStorage.setItem('places',JSON.stringify(responseData.places));
+    } catch (error) {
+        console.log(error);
     }
-    return response.json();
-}).then(res =>{
-    let places = res.places;
-    localStorage.setItem('places',JSON.stringify(res.places));
-}).catch(err => {
-    console.log(err);
-});
-
+}
+getPeta(URL);
 let places = JSON.parse(localStorage.getItem('places'));
 for ( var p of places) {
     var marker = L.marker(p.lokasi).addTo(mymap).bindPopup(p.sponsor);
